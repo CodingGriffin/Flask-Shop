@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}{{ product.name }} - סלון היופי של נתניה{% endblock %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8">
+    <div class="flex flex-wrap -mx-4">
+        <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0">
+            <img src="{{ url_for('static', filename='images/' + product.image) }}" alt="{{ product.name }}" class="w-full h-auto object-cover rounded-lg shadow-md">
+        </div>
+        <div class="w-full md:w-1/2 px-4">
+            <h1 class="text-3xl font-bold mb-4 text-pink-600">{{ product.name }}</h1>
+            <p class="text-xl font-semibold mb-4 text-gray-700">₪{{ product.price }}</p>
+            <p class="text-gray-600 mb-6">{{ product.description }}</p>
+            <button class="bg-pink-600 text-white px-6 py-3 rounded-lg hover:bg-pink-700 transition duration-300">הוסף לסל</button>
+        </div>
+    </div>
+</div>
+{% endblock %}

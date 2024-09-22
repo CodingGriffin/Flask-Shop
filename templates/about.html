@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}אודות המספרה - סלון מארי{% endblock %}
+
+{% block content %}
+<h1 class="text-4xl font-bold text-center mb-8 text-pink-600">אודות סלון מארי</h1>
+
+<div class="mb-12">
+    <p class="text-lg mb-4">סלון מארי הוא המוסד הוותיק ביותר בנתניה לטיפול בתלתלים ופאות. כבר למעלה מ-50 שנה אנו מספקים שירות מקצועי ואיכותי לתושבי נתניה והסביבה.</p>
+    <p class="text-lg mb-4">המומחיות שלנו היא בטיפול בשיער מתולתל ובהתאמת פאות איכותיות. הצוות המיומן שלנו, בעל ניסיון רב שנים, מעניק טיפולי שיער מותאמים אישית לכל סוגי התלתלים, וכן שירותי התאמה והתאמת פאות מקצועיים.</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+    <div class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold mb-4 text-pink-600">המומחיות שלנו</h2>
+        <ul class="list-disc list-inside">
+            <li>טיפול בשיער מתולתל</li>
+            <li>התאמת פאות איכותיות</li>
+            <li>תספורות ועיצובי שיער מתקדמים</li>
+            <li>טיפולי שיער מקצועיים</li>
+        </ul>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold mb-4 text-pink-600">הערכים שלנו</h2>
+        <ul class="list-disc list-inside">
+            <li>מקצועיות ללא פשרות</li>
+            <li>שירות אישי ולבבי</li>
+            <li>חדשנות וטכניקות מתקדמות</li>
+            <li>שביעות רצון מלאה של הלקוחות</li>
+        </ul>
+    </div>
+</div>
+
+<div class="text-center mb-12">
+    <h2 class="text-3xl font-semibold mb-4 text-pink-600">בואו לבקר אותנו</h2>
+    <p class="mb-2"><i class="fas fa-map-marker-alt text-pink-600 mr-2"></i>רחוב ויצמן 45, נתניה</p>
+    <p class="mb-2"><i class="fas fa-phone text-pink-600 mr-2"></i>09-8765432</p>
+    <p><i class="fas fa-envelope text-pink-600 mr-2"></i>info@salonmarie.co.il</p>
+</div>
+{% endblock %}

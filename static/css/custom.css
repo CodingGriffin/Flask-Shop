@@ -1,0 +1,22 @@
+/* Custom styles for RTL support and additional design elements */
+body {
+    font-family: 'Heebo', sans-serif;
+}
+
+.carousel-container {
+    direction: ltr;
+}
+
+.carousel img {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-prev,
+.carousel-next {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
